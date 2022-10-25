@@ -1,0 +1,177 @@
+:root {
+    --primary: #C869EE;
+    --secondary: #ffffff;
+    --accent: #F5FB45;
+}
+
+
+* {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+.sidebar {
+    width: 250px;
+    background-color: var(--primary);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+h1 {
+    margin: 10px 0 0 10px;
+    background-color: var(--primary);
+    font-size: 48px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.avatar {
+    display: block;
+    margin: 20% auto 20% auto;
+    width: 170px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    border: 5px solid var(--accent);
+    padding: 5px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+  
+/* Sidebar links */
+.sidebar a {
+    background-color: var(--primary);
+    color: var(--secondary);
+    padding: 16px;
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+    text-decoration: none;
+    max-width: 200px;
+}
+
+/* links in sidebar inset glow when clicked */
+.sidebar a:focus {
+    background-color: var(--primary);
+    color: var(--white);
+    box-shadow: inset 0 -1em 1em var(--accent);
+}
+  
+/* Links on mouse-over */
+.sidebar a:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+    box-shadow: 10px 5px 5px var(--accent);
+}
+  
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+.chunks {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 250px;
+    padding: 1rem 16rem;
+    min-height: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+    padding: 2px;
+    border: 3px dotted var(--accent);
+    background-color: var(--primary);
+    font-size: 36px;
+    color: var(--Xrich);
+}
+
+.content a, p {
+    text-decoration: none;
+    font-size: 21px;
+    color: var(--white);
+}
+
+h1 {
+    background-color: var(--primary);
+    color: var(--secondary);
+    animation-name: cool-intro;
+    animation-duration: 3s;
+    /* animation-iteration-count: 3; */
+    /* animation-direction: alternate; */
+    animation-timing-function: ease-in;
+}
+
+#work {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screenshot {
+    margin: 5%;
+    padding: auto;
+    border: 5px solid var(--accent);
+    max-width: 80%;
+    min-width: 50%;
+    border-radius: 25px;
+}
+
+.HMU {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    width: 50%;
+    border: 3px solid var(--accent);
+    padding: 10px;
+    margin: 100px auto 50px auto;
+    font-family: cursive;
+    color: var(--secondary);
+}
+/* good animation */
+/* @keyframes cool-intro {
+    0%  {color: red;}
+    10% {color: orange;}
+    20% { color: yellow;}
+    30% { color: green;}
+    40% {color: indigo;}
+    50% {color: violet;}
+    60% {color: #ffffff;}
+    90% {color: black;}
+    100% { color: white;}
+} */
+  
+/* old animation */
+/* @keyframes cool-intro {
+    0%   {color: var(--LXB);}
+    10%  {color: var(--lightB);}
+    20%  {color: var(--mid);}
+    30%  {color: var(--rich);}
+    40%  {color: var(--dark);}
+    50%  {color: var(--Xrich);}
+    60%  {color: var(--richestB);}
+    70%  {color: var(--richB);} 
+    80%  {color: var(--funB);}
+    90%  {color: var(--black);}
+    100% {color: var(--white);}
+} */
+
+/* On screens that are less than 768px wide, make the sidebar into a topbar */
+@media screen and (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    main.content {margin-left: 0;}
+}
+  
+/* On screens that are less than 576px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 576px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
