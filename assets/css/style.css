@@ -1,13 +1,14 @@
 :root {
-    --primary: #C869EE;
-    --secondary: #ffffff;
-    --accent: #F5FB45;
+    --primary: #660D29;
+    --secondary: #B272E0;
+    --accent: #ffffff;
 }
 
 
 * {
     background-color: var(--primary);
     color: var(--secondary);
+    font-family: 'Poiret One', cursive;
 }
 
 .sidebar {
@@ -22,7 +23,6 @@ h1 {
     margin: 10px 0 0 10px;
     background-color: var(--primary);
     font-size: 48px;
-    font-family: 'Permanent Marker', cursive;
 }
 
 .avatar {
@@ -30,7 +30,7 @@ h1 {
     margin: 20% auto 20% auto;
     width: 170px;
     background-color: var(--primary);
-    border-radius: 50%;
+    border-radius: 3rem;
     border: 5px solid var(--accent);
     padding: 5px;
 }
@@ -74,7 +74,6 @@ h1 {
     margin-left: 250px;
     padding: 1rem 16rem;
     min-height: 100%;
-    font-family: 'Oswald', sans-serif;
 }
 
 h2 {
@@ -126,7 +125,6 @@ footer {
     border: 3px solid var(--accent);
     padding: 10px;
     margin: 100px auto 50px auto;
-    font-family: cursive;
     color: var(--secondary);
 }
 /* good animation */

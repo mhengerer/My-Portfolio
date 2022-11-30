@@ -6,17 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael Hengerer's Portfolio</title>
-    <link rel="stylesheet" href="./assets/reset.css">
-    <link rel="stylesheet" href="./assets/style.css">
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <!-- skeleton -->
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/skeleton.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
     <header class="sidebar">
         <h1>I'm Michael</h1>
-        <img class="avatar" src="./assets/images/edited-profile-photo.png" alt="photo of me">
+        <img class="avatar" src="./assets/images/Photo-2 (1).png" alt="photo of me">
         <nav class="buttons">
             <a href="#about">About Me</a>
             <a href="#work">Some of my Work</a>
@@ -27,17 +31,65 @@
     <main class="content">
         <section class="chunks" id="about">
             <h2>About Me:</h2>
-            <p>I am a software engineer. I am also an artist so I find that I try most often to implement creative
+            <p>I am a front end web developer. I am also an artist so I find that I try most often to implement creative
                 solution for problems I encounter. I enjoy working with others and tackling big projects. I feel at home
                 under pressure and feel that I thrive most in fast paced and demanding environments. Thanks for stopping
                 by and I do hope you take a second to take a gander at my recent work and consider me for your next
                 team!</p>
         </section>
         <section id="work" class="chunks">
-            <h2>My Work:</h2>
-            <p>Okay, so honesty time.... I don't really have alot of work to show off yet :(((. But Just you wait! Thers
-                is alot of big and exciting projects to come but here's a Code Refactor to hold you over.</p>
-            <a class="screenshot" href="https://mhengerer.github.io/Refactoring-Challenge/"><img class="screenshot" src="./assets/images/refactor-screenshot.png" alt="screenshot of refactor project" title="Code Refactor Project"></a>
+            <div class="row">
+                <h2 class="twelve columns">My Work:</h2>
+            </div>
+            <div class="row">
+                <h3 class="twelve columns">Group Project 1: WalkPerson</h3>
+            </div>
+            <div class="row">
+                <a class="six columns" href="https://github.com/mhengerer/WalkPerson"><img class="screenshot"
+                        src="./assets/images/walkpersonscreenshot1.png" alt="screenshot of WalkPerson Project project"
+                        title="WalkPerson Project: UI"></a>
+                <a class="six columns" href="https://github.com/mhengerer/WalkPerson"><img class="screenshot"
+                        src="./assets/images/walkpersonscreenshot2.png" alt="screenshot of WalkPerson Project project"
+                        title="WalkPerson Project: Server-Side API Embeds"></a>
+            </div>
+            <div class="row">
+                <h3 class="twelve columns">Weather Dashboard Project</h3>
+            </div>
+            <div class="row">
+                <a class="twelve columns" href="https://github.com/mhengerer/Weather-Dashboard-App"><img
+                        class="screenshot" src="./assets/images/mhengerer.github.io_Weather-Dashboard-App_.png"
+                        alt="Weather Dashboard project" title="Weather Dashboard Project"></a>
+            </div>
+            <div class="row">
+                <h3 class="twelve columns">Javascript Quiz Project</h3>
+            </div>
+            <div class="row">
+                <a class="twelve columns" href="https://github.com/mhengerer/JavaScript-Quiz-Game"><img
+                        class="screenshot"
+                        src="./assets/images/_C__Users_mheng_bootcamp_projects_JavaScript-Quiz-Game_index.html.png"
+                        alt="screenshot of Javascript Quiz project" title="Javascript Quiz Project"></a>
+            </div>
+            <div class="row">
+                <h3 class="twelve columns">Password Generator Project</h3>
+            </div>
+            <div class="row">
+                <a class="twelve columns" href="https://github.com/mhengerer/Password-Generator"><img class="screenshot"
+                        src="./assets/images/_C__Users_mheng_bootcamp_projects_Password-Generator_index.html.png"
+                        alt="screenshot of Password Generator project" title="Password Generator Project"></a>
+            </div>
+            <div class="row">
+                <h3 class="twelve columns">Code Refactor Project</h3>
+            </div>
+            <div class="row">
+                <a class="twelve columns" href="https://mhengerer.github.io/Refactoring-Challenge/"><img
+                        class="screenshot" src="./assets/images/refactor-screenshot.png"
+                        alt="screenshot of refactor project" title="Code Refactor Project"></a>
+            </div>
+
+
+
+
+
         </section>
         <section id="contact" class="chunks">
             <h2>Contact Information:</h2>
@@ -53,7 +105,8 @@
         </Section> -->
     </main>
     <footer>
-        <p>“Before I came here, I was confused about this subject. Having listened to your lecture, I am still confused -- but on a higher level.”</p>
+        <p>“Before I came here, I was confused about this subject. Having listened to your lecture, I am still confused
+            -- but on a higher level.”</p>
         <p>-Enrico Fermi</p>
     </footer>
 </body>
